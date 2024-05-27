@@ -1,81 +1,166 @@
-\documentclass{article}
+\documentclass[a4paper, 12pt, twocolumn]{article}
 
-% Paquetes necesarios
-\usepackage[utf8]{inputenc} % Codificación de entrada UTF-8
-\usepackage[spanish]{babel} % Idioma español
-\usepackage{graphicx} % Para incluir imágenes
-\usepackage{lipsum} % Generador de texto de relleno
-\usepackage{multicol} % Para dividir el texto en columnas
+% Paquetes adicionales
+\usepackage[utf8]{inputenc} % Codificación de caracteres
+\usepackage[T1]{fontenc}    % Codificación de fuentes
+\usepackage[spanish]{babel} % Idioma del documento
+\usepackage{amsmath, amssymb} % Símbolos matemáticos
+\usepackage{graphicx}       % Insertar imágenes
+\usepackage{hyperref}       % Hipervínculos
+\usepackage{geometry}       % Márgenes
+\geometry{left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
 
-% Título y autor del artículo
-\title{Guía rápida de LaTex}
-\author{Alexi Mendoza\\ \and Mary Vera \\ }
-\date{\today} % O puedes especificar una fecha específica
+\title{Efectos de la inteligencia artificial en las estrategias de marketing}
+\author{Alexi Mendoza / Mary Vera}
+\date{\today}
 
 \begin{document}
 
-\maketitle % Generar el título
-
-\begin{abstract}
-Overleaf es una herramienta de publicación y redacción colaborativa en línea que hace que todo el proceso de redacción, edición y publicación de documentos científicos sea mucho más rápido y sencillo. Overleaf pone a tu disposición un editor LaTeX fácil de usar que incluye colaboración en tiempo real y compilación automática, de modo que se visualiza el resultado a medida que se escribe.
-\end{abstract}
+\twocolumn[
+\begin{@twocolumnfalse}
+    \maketitle
+    \begin{center}
+    \begin{tabular}{p{0.48\textwidth} p{0.48\textwidth}}
+        \textbf{Resumen:} & \textbf{Summary:} \\
+        Este artículo se enfoca en los efectos de la inteligencia artificial en las estrategias de marketing, destacando la importancia creciente de la IA en diversos sectores. Se analiza la necesidad de las organizaciones de incorporar la IA en sus procesos de marketing para no quedar obsoletas. Se menciona la relevancia de la IA en la personalización de productos y servicios, así como en la mejora de las estrategias de marketing. Se aborda la implementación de chatbots y otras tecnologías de IA en el ámbito del marketing. Además, se plantea un futuro en el que la IA permitirá una interacción más fluida entre humanos y máquinas en el contexto del marketing.
+        &
+        This article focuses on the effects of artificial intelligence on marketing strategies, highlighting the growing importance of AI in various sectors. The need for organizations to incorporate AI into their marketing processes to avoid becoming obsolete is analyzed. The relevance of AI in the personalization of products and services, as well as in the improvement of marketing strategies, is mentioned. The implementation of chatbots and other AI technologies in the field of marketing is addressed. In addition, a future is proposed in which AI will allow a more fluid interaction between humans and machines in the context of marketing.
+    \end{tabular}
+    \end{center}
+\end{@twocolumnfalse}
+]
 
 \section{Introducción}
-LaTeX es un sistema de preparación de documentos. Con él puedes preparar manuscritos, artículos de revista, cartas, tesis, presentaciones y cualquier tipo de documento que quisieras imprimir en papel o mostrar en pantalla.
 
-\begin{figure*}[ht]
-    \centering
-    \begin{minipage}[b]{0.45\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{latex.png} % Cambia "imagen1.jpg" por el nombre de tu primera imagen
-        \caption{Overleaf}
-        \label{fig:imagen1}
-    \end{minipage}
-    \hspace{0.5cm}
-    \begin{minipage}[b]{0.45\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{latex1.png} % Cambia "imagen2.jpg" por el nombre de tu segunda imagen
-        \caption{En la web}
-        \label{fig:imagen2}
-    \end{minipage}
-\end{figure*}
+En la actualidad, la competencia entre organizaciones hace imprescindible el uso de la tecnología para impactar a los consumidores. Esto ha dado lugar a grandes redes de dispositivos conectados que comparten información automáticamente, representando un tipo de inteligencia artificial (IA). Esta dinámica influye en las estrategias de marketing, donde la participación de los consumidores mejora tanto la imagen cognitiva como la afectiva de las marcas, y la formación de la imagen y la intención de compra varían según la plataforma utilizada (Molinillo, Liébana-Cabanillas, Anaya-Sánchez y Buhalis, 2017).
 
-\begin{multicols}{2} % Inicio de la división en dos columnas
-\section{¿Por qué debería de usar LaTeX?}
-Existiendo otras alternativas más convencionales para producir documentos, como Word de Microsoft, es natural preguntarse porque debería uno tomarse la molestia de aprender a usar LaTeX.
+La inteligencia artificial (IA) simula procesos de inteligencia humana, incluyendo reconocimiento de voz, toma de decisiones y aprendizaje automático (Devang et al., 2019). 
+La adopción de la IA está reduciendo la brecha entre consumidores y tecnología, impulsando inversiones en este campo. La IA facilita tareas como reconocimiento facial y autoconducción, interpretando datos y aprendiendo de ellos para alcanzar objetivos específicos de esta se ha ayudado a las organizaciones a gestionar información, permitiendo a los humanos enfocarse en actividades más útiles y mejorando la satisfacción del cliente (Brock y Von Wanger, 2019). 
 
-\subsection{Ventajas}
-Una ventaja menos obvia, pero quizá más importante, es que LaTeX te permite claramente separar el contenido y el formato de tu documento. Como científico, investigador o escritor, esto te da la oportunidad de concentrarte en el ‘qué’, en la parte creativa de tu obra, en generar y escribir ideas. Por su parte el sistema se encargará del ‘cómo’ hacer para plasmar esas ideas visualmente en un documento. LaTeX, además, realiza de manera automática muchas tareas que de otro modo podrían resultar tediosas o engorrosas: numerar capítulos y figuras, incluir y organizar la bibliografía adecuada, mantener índices y referencias cruzadas.
 
-\subsection{¿Cómo consigo LaTeX?}
-Según tu sistema operativo lee las instrucciones para Windows, Mac OS X, o Linux. Cualquiera que sea tu sistema vas a necesitar, esencialmente, de los siguientes tres componentes:
+En marketing, la IA está ganando importancia, especialmente en la investigación de mercados, al facilitar la administración de información (Wirth, 2018). 
+El marketing, que busca satisfacer las necesidades del consumidor (Godwin, 2019), se beneficia del aprendizaje automático y profundo de la IA, mejorando estrategias y alineando oferta y demanda. 
+La revolución tecnológica continuará conectando dispositivos autónomos y semiautónomos, beneficiando sectores desde casas inteligentes hasta la creación de autómatas (Nguyen y Simkin, 2017).
 
-Un editor de texto. Es la aplicación interactiva que usas para escribir documentos .tex. Cualquier editor de texto simple te sirve, pero editores especializados en LaTeX te pueden ofrecer rápido acceso a los comandos más comunes para procesar y ver los documentos que generas.
 
-Una distribución de LaTeX. Este es el motor que se encarga de convertir tu archivos fuente de LaTeX en documentos portables .pdf.
+En contraste, desde el punto de vista del marketing, se asegura que cada vez alcanza mayor auge el tema de la IA, mismo que está impactando especialmente a las empresas de investigación de mercados debido a que la información ya se encuentra disponible y solo hay que saber administrarla de manera adecuada (Wirth, 2018). 
+\section{Desarrollo}
+\subsection{Objetivo, metodología y estructura del trabajo}
 
-Un visor de documentos. Esta es la aplicación que te permite ver e imprimir tus documentos generados por LaTeX.
+El objetivo de este artículo es revisar la literatura disponible sobre la inteligencia artificial (IA) y su relación con el marketing, proporcionando a los investigadores actualizaciones sobre estos conceptos y vínculos estratégicos beneficiosos. Para ello, se recopilaron y analizaron sistemáticamente las principales aportaciones desde 2015, dado el constante cambio en estos temas. Se consideraron artículos académicos, revisiones de literatura, reportes de conferencia y capítulos de libro, excluyendo otros tipos de documentos. El análisis de contenido permitió organizar la información en conceptos básicos y características clave de la relación entre IA y marketing, así como diversos puntos de vista sobre su adopción en las organizaciones.
 
-\section{¿Cómo uso LaTeX?}
-Ya que has instalado LaTeX, el siguiente paso es aprender a generar un documento. Son tres las operaciones principales que tienes hacer: editar, compilar, y visualizar el documento.
+La revisión muestra la variedad de enfoques sobre la relación entre IA y estrategias de marketing, y la última sección del documento propone consideraciones finales para futuras investigaciones, con el objetivo de actualizar a los investigadores y evitar el uso de ideas obsoletas.
 
-Editar. El primer paso consiste en usar tu editor seleccionado para generar un archivo, con terminación .tex, que contiene el código en LaTeX describiendo la estructura y el contenido de tu documento. Consulta el curso de LaTeX donde puedes encontrar un ejemplo sencillo y una introducción al lenguaje de LaTeX.
+\subsection{Aproximación al concepto de IA desde el enfoque de marketing}
 
-Compilar. Compilar es el proceso, realizado por el motor de LaTeX, que convierte tus archivos .tex en documentos con formato .pdf que se pueden imprimir y ver en pantalla.
+Actualmente, la IA se ha convertido en un término omnipresente para describir innumerables formas de tecnología avanzada, como los siguientes: 
 
-Asegúrate de elegir la opción adecuada para generar directamente documentos .pdf. En TeXnicCenter para Windows, por ejemplo, elige en la barra de herramientas la opción LaTeX PDF y presiona el botón para compilar. TeXShop en OS X viene ya configurado para generar documentos .pdf, y tiene un botón “Typeset” que inicia la acción de compilar. En otros sistemas asegurate de que el comando usado para compilar sea pdflatex.
+\textbf{1. Big Data}: Conjuntos de datos grandes que requieren análisis avanzados, aprendizaje automático y sistemas de computación en la nube.
 
-Visualizar. Una vez compilado el documento, y si no hubieron errores, puedes visualizar el documento generado por LaTeX. En TeXnicCenter, por ejemplo, hay un botón que te permite iniciar el visualizador de documentos, mientras que en TeXShop el visualizador interno es activado automáticamente cuando la compilación termina sin errores.
+\textbf{2. Chatbots:} Programas automatizados que interactúan con humanos a través de medios textuales o auditivos, utilizando algoritmos para procesar datos textuales y determinar respuestas apropiadas.
 
-\section{Conclusiones}
-Overleaf es una herramienta de publicación y redacción colaborativa en línea que hace que todo el proceso de redacción, edición y publicación de documentos científicos sea mucho más rápido y sencillo. Overleaf brinda la conveniencia de un editor LaTeX fácil de usar con colaboración en tiempo real y la salida totalmente compilada producida automáticamente en segundo plano a medida que escribe.
-\end{multicols} % Fin de la división en dos columnas
+\textbf{3. Agentes Virtuales:} Personajes generados por computadora que actúan como representantes de servicio al cliente, a menudo considerados chatbots.
 
-\section
+\textbf{4. Asistentes Virtuales: }Asistentes digitales que responden a comandos de voz y realizan diversas tareas, como Siri de Apple, Alexa de Amazon, Cortana de Microsoft y Google Now.
 
-\begin{thebibliography}{9}
-\bibitem{ejemplo} LaTeX Fácil: Guía rápida de LaTeX. (s. f.). https://nokyotsu.com/latex/guia/
+\textbf{5. Robots:} Máquinas programables para realizar una serie de acciones, movimientos o tareas, proporcionando servicios similares a los humanos.
 
-\end{thebibliography}
+\textbf{6. Blockchain:} Tecnología descentralizada que almacena registros inmutables de datos en una red distribuida de igual a igual (Jakovljevic, 2018).
+
+\textbf{7. Drones:} Dispositivos aéreos no tripulados que pueden ser programados para utilizar el aprendizaje por máquina.
+
+\textbf{8. Internet of Things (IoT):} Extiende la conectividad a dispositivos como sistemas de seguridad y aparatos eléctricos, permitiendo enviar y recibir información a través de internet.\textbf{}
+
+\textbf{9. Dispositivos Inteligentes:} Conectan a otros dispositivos en redes y son capaces de comunicarse y calcular usando protocolos inalámbricos como Wi-Fi y Bluetooth.
+
+\textbf{10. Machine Learning:} Aplicación de la IA que utiliza algoritmos y datos para permitir que las computadoras aprendan sin ser programadas para tareas específicas.
+
+\textbf{11. Deep Learning:} Subconjunto del aprendizaje automático que simula el aprendizaje a partir de la experiencia usando algoritmos relacionados con la estructura y función del cerebro.
+
+\textbf{12. Redes Neuronales:} Utilizan algoritmos y sistemas de computación para simular el cerebro humano, aprendiendo a realizar tareas sin reglas predefinidas.
+
+
+\subsection{ Relación directa entre la IA y marketing}
+
+La relación directa entre la inteligencia artificial (IA) y el marketing es fundamental en la actualidad. Las estrategias de marketing se benefician enormemente de la IA, ya que esta tecnología permite analizar grandes cantidades de datos de manera eficiente y rápida, identificar patrones y tendencias en el comportamiento del consumidor, personalizar la experiencia del cliente, automatizar procesos de marketing, mejorar la segmentación de audiencias, optimizar campañas publicitarias y predecir el rendimiento de las estrategias de marketing.
+
+La IA también facilita la interacción con los consumidores a través de la personalización de mensajes y ofertas, lo que aumenta la relevancia y efectividad de las acciones de marketing. Además, la IA puede ayudar a las organizaciones a comprender mejor las preferencias y necesidades de los clientes, lo que les permite adaptar sus estrategias de marketing de manera más precisa y eficaz.
+
+Es decir, la inteligencia artificial juega un papel crucial en el ámbito del marketing al proporcionar herramientas y capacidades que permiten a las empresas mejorar su competitividad, aumentar la eficiencia de sus acciones de marketing y ofrecer experiencias personalizadas y relevantes a los consumidores.
+
+El marketing está en constante evolución debido a los cambios en las capacidades de gestión, las tecnologías de la información y el comportamiento del consumidor. La inteligencia artificial (IA) es fundamental para gestionar estos cambios, ya que puede adquirir y organizar información de los consumidores para su uso futuro. Las innovaciones tecnológicas, impulsadas por la IA, se adaptan a las necesidades individuales de los usuarios, iniciando un diálogo entre dispositivos inteligentes y humanos.
+
+La inteligencia de marketing, un término que vincula la IA y el marketing, se basa en nuevas tecnologías como la IA, permitiendo abordar temas complejos en las estrategias de marketing, desde el alcance digital hasta la minería de datos (Lies, 2019). Las principales tendencias en marketing, como la IA y las redes sociales, se combinan para comprender mejor al usuario y resaltar los distintivos comerciales de las marcas y productos.
+
+Las redes sociales permiten a los usuarios crear perfiles abiertos y semiabiertos, lo que facilita el conocimiento de las actividades de otros usuarios del mismo entorno. Esto permite a los profesionales del marketing, con el respaldo de la IA, impactar de manera individual a los usuarios al generar interacciones y relaciones entre ellos.
+
+Los disruptores del mercado, junto con la evolución de la informática cognitiva (IA), son fundamentales para el marketing tecnológico orientado al futuro. Esto permite que las organizaciones sigan siendo competitivas, adaptándose a los cambios acelerados en el entorno empresarial.
+
+Se espera que, una vez que la IA y sus plataformas dejen de ser el tema de moda, la mayoría de los consumidores se adapten a una plataforma exclusiva que conocerá perfectamente sus necesidades y preferencias, casi sin instrucción alguna. Sin embargo, esto marca el comienzo de una transición hacia una era totalmente automatizada, donde el marketing podría ser uno de los primeros sectores afectados debido a la capacidad de la IA para recabar, analizar y canalizar información.
+
+La capacidad de predecir el rendimiento del desarrollo de nuevos productos y adaptarse a los diferentes mercados mediante el uso de la IA es fundamental para la competitividad en el mercado actual. La combinación de IA y aprendizaje automático aumenta la pertinencia de los programas de marketing para cada segmento de clientes individualmente y se proyecta como la base principal para estrategias futuras.
+
+Es importante considerar las variaciones en la intención de uso de la IA según la familiaridad de los usuarios con los sistemas robóticos. Las estrategias de marketing deben adaptarse a las preferencias de los usuarios, aprovechando el conocimiento de aquellos que están más familiarizados con la IA para transmitir una experiencia favorable a los menos identificados.
+
+\section{Conclusión}
+
+
+1. La IA está revolucionando la forma en que las empresas interactúan con los consumidores, permitiendo una personalización más profunda de las experiencias de compra y una segmentación más precisa de las audiencias.
+
+2. La aplicación de la IA en el marketing facilita la automatización de procesos, la optimización de campañas publicitarias y la toma de decisiones basadas en datos, lo que conduce a una mayor eficiencia y efectividad en las estrategias de marketing.
+
+3. La inteligencia de marketing, basada en tecnologías como la IA, abre nuevas posibilidades para mejorar la relación entre las empresas y los consumidores, permitiendo una comunicación más personalizada y relevante.
+
+4. Las organizaciones que no incorporan la inteligencia artificial en sus estrategias de marketing corren el riesgo de quedarse rezagadas y perder competitividad en un entorno empresarial cada vez más digitalizado y orientado a los datos.
+
+En conclusión, la integración de la inteligencia artificial en las estrategias de marketing representa una oportunidad significativa para las empresas que buscan mejorar su rendimiento, optimizar sus operaciones y fortalecer su relación con los clientes en un mercado en constante evolución.
+
+\section*{Referencias}
+
+Abashidze, I., Dąbrowski, M. (2016). Internet of things
+in marketing: Opportunities and security issues. Management Systems in Production Engineering, 4(24), 217-221.
+
+Balducci, B., Marinova, D. (2018). Unstructured data in
+marketing. Journal of the Academy of Marketing Science, 46(4),
+557–590.
+
+Buhalis, D. (2017). DMO online platforms: Image and intention to visit. Tourism Management, 65, 116-130.
+
+Brock, J. K. U., Von Wangenheim, F. (2019). Demystifying AI: What digital transformation leaders can teach you
+about realistic artificial intelligence. California Management
+Review, 61(4), 110–134.
+
+Conoscenti, M., Vetro, A., De Martin, J. C. (2016). Blockchain for the internet of things: A systematic literature review. 2016 IEEE/ACS 13th International Conference of Computer Systems and Applications (AICCSA).
+
+Constantinescu, E. M. (2019). New marketing solutions for
+IoT market. Knowledge Horizons / Orizonturi Ale Cunoasterii, 11(2), 26–31.
+
+Devang, V., Chintan, S., Gunjan, T. Krupa, R. (2019).
+Applications of artificial intelligence in marketing. Annals of the University Dunarea de Jos of Galati: Fascicle: XVII, Medicine, 25(1), 28–36.
+
+Lies, J. (2019). Marketing intelligence and big data: Digital
+marketing techniques on their way to becoming social engineering techniques in marketing. International Journal of Interactive Multimedia Artificial Intelligence, 5(5), 134–144.
+
+Jones V.K. (2018). Voice-activated change: Marketing in the
+age of artificial intelligence and virtual assistants. Journal of
+Brand Strategy, 7(3), 233–245. 
+
+Molinillo, S. Japutra, A. (2017). Organizational adoption of digital information and technology: A theoretical review. The Bottom Line, 30(1), 33-46. 
+
+Molinillo, S., Liébana-Cabanillas, F., Anaya-Sánchez, R. 
+
+Nguyen, B., Simkin, L. (2017). The internet of things
+(IoT) and marketing: the state of play, future trends and the
+implications for marketing. Management Systems in Production Engineering, 33(1), 1-6.
+
+Wirth, N. (2018). Hello marketing, what can artificial intelligence help you with?. International Journal of Market Research, 60(5), 435–438.
+
+Yegin, T. (2020). The place and future of artificial intelligence in marketing strategies. Ekev Akademi Dergisi, 24(81),
+489-506.
+
+Zhang, X., Ming, X., Liu, Z., Yin, D., Chen, Z., Chang, Y. (2019). A reference framework and overall planning of industrial artificial intelligence (I-AI) for new application scenarios. International Journal of Advanced Manufacturing Technology, 101(9–12), 2367-2389.
+
+
+
 
 \end{document}
